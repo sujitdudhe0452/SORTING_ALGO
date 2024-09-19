@@ -1,0 +1,31 @@
+Selection Sort:
+		
+		int n = 5;
+		round most be = n-1 = 4;
+		jo pun round chlauy tya tikhani barobar elemnt aala pahije..
+
+index:		0	1	2	3	4
+
+Example:	9	7	3	1	6
+
+Round 1:	1	7	3	9	6	(0 - 4)
+
+Round 2:	1	3	7	9	6	(1 - 4)
+
+Round 3:	1	3	6	9	7	(2 - 4)
+
+Round 4:	1	3	6	7	9	(3 - 4)
+
+//CODING PART
+
+
+	for(int i=0;i<n-1;i++)
+	{
+	   int minindex =i;
+	   for(int j=i+1;j<n;j++)
+	   {
+		if(a[j]<a[miniindex])
+			miniindex=j;
+	   }
+	   swap(a[i],a[miniindex])
+	}
